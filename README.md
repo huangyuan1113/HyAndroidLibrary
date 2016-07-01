@@ -3,7 +3,7 @@
  https://github.com/ReactiveX/RxJava  
  
 ## 使用方式
-`compile 'so.laji.android:library:1.0.3'`
+`compile 'so.laji.android:library:1.0.5'`
 
 ### 功能说明
 - Logger

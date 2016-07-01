@@ -22,6 +22,7 @@ public abstract class BaseMvpFragment<V extends IView, T extends BasePresenter<V
             setTranslucentStatus(true);
         }
         presenter = initPresenter();
+        presenter.attachView((V) this);
     }
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
@@ -38,12 +39,6 @@ public abstract class BaseMvpFragment<V extends IView, T extends BasePresenter<V
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        presenter.attachView((V) this);
-    }
-
-    @Override
     public void onDestroyView() {
         presenter.detachView();
         super.onDestroyView();
@@ -56,6 +51,5 @@ public abstract class BaseMvpFragment<V extends IView, T extends BasePresenter<V
      * @return
      */
     public abstract T initPresenter();
-
 
 }

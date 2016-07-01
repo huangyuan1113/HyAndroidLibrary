@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 23
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
     }
     buildTypes {
         release {
@@ -28,12 +28,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 
-    compile 'com.github.chrisbanes.photoview:library:1.2.4'
-
-    compile 'com.github.bumptech.glide:glide:3.6.1'
-
-    compile 'com.alibaba:fastjson:1.2.8'
-
     // https://github.com/ReactiveX/RxJava
     compile 'io.reactivex:rxjava:1.1.5'
 }
@@ -43,7 +37,7 @@ publish {
     userOrg = 'huangyuan1113'//bintray.com用户名
     groupId = 'so.laji.android'//jcenter上的路径
     artifactId = 'library'//项目名称
-    publishVersion = '1.0.2'//版本号
-    desc = 'android tools'//描述，不重要
+    publishVersion = '1.0.5'//版本号
+    desc = 'android libs, 简单的mvp与工具'//描述，不重要
     website = 'https://github.com/huangyuan1113'//网站，不重要
 }
